@@ -4,7 +4,7 @@ def call(String No_of_threads = 'a', String Environment = 'a') {
 pipeline {
   environment { 
 		Number_of_threads = "${No_of_threads}"
-    Environment       = "${Environment}"
+                Environment       = "${Environment}"
 	}
     agent any
    
