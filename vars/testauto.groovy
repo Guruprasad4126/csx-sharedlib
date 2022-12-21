@@ -11,13 +11,13 @@ pipeline {
     stages {
         stage ('Functional test'){
             steps {
-		    echo '(Test Completed in success in "${Environment}")'
+		   sh "echo 'Test Completed in success in ${Environment}"
                 sleep 5
                 }
             }
         stage('Integration test') {
                     steps {
-			    echo '(Test Completed in success in "${Environment}")'
+			sh "echo Test Completed in success in ${Environment}"
                         sleep 10
                         }
                     }
