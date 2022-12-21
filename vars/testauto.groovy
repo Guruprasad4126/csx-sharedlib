@@ -11,6 +11,7 @@ pipeline {
     stages {
         stage ('Functional test'){
             steps {
+		    sh "echo Number of threads executed in parallel is ${Number_of_threads}"
 		   sh "echo Test Completed in success in ${Environment}"
                 sleep 5
                 }
